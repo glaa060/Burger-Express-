@@ -1,0 +1,548 @@
+/* Header */
+.header {
+    text-align: center;
+    padding: 100px 0; /* เพิ่มพื้นที่ด้านบนและล่าง */
+    background-color: #ffebcd; /* สีเบจอ่อน ให้เข้ากับโทนสีของโลโก้ */
+    margin-top: 0; /* ถ้าต้องการลดระยะห่างกับส่วนบน */
+}
+
+.header h1 {
+    font-size: 4em; /* ขนาดตัวอักษรใหญ่ */
+    color: #ff7f50; /* สีส้ม เพื่อความสดใส */
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 30px; /* เพิ่มช่องว่างระหว่างข้อความ */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;  /* ทำให้ Navbar ติดอยู่กับขอบบน */
+    top: 0;           /* ตำแหน่งอยู่ที่ด้านบนสุด */
+    left: 0;          /* เริ่มต้นที่ด้านซ้ายสุด */
+    width: 100%;      /* ให้ Navbar ขยายเต็มความกว้าง */
+    background-color: #ff4500; /* สีส้ม-แดง เพื่อความสดใส */
+    z-index: 1000;    /* ทำให้ Navbar อยู่ด้านหน้าของเนื้อหาอื่น */
+    padding: 15px 0;  /* เพิ่มระยะห่างภายใน Navbar */
+}
+
+/* ปรับแต่งลิงก์ใน Navbar */
+.navbar a {
+    color: #fff;      /* สีตัวอักษรในลิงก์ */
+    text-decoration: none; /* เอาเส้นใต้ลิงก์ออก */
+    padding: 10px 20px;    /* เพิ่มพื้นที่รอบๆ ตัวอักษร */
+    display: inline-block; /* ให้ลิงก์แสดงในแถวเดียวกัน */
+}
+
+.navbar a:hover {
+    background-color: #ff7f50; /* สีส้มอ่อน เมื่อเอาเมาส์ไปวาง */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ffe5b4; /* สีเหลืองพีช ให้เข้ากับสีโลโก้ */
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #ff7f50; /* สีส้ม ให้เหมาะสมกับโลโก้ */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero .card img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff7f50; /* สีส้มสดใส */
+    color: white;
+    border: 2px solid #ff7f50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ff4500; /* สีแดงเข้ม */
+}
+
+/* New Section */
+.new-section {
+    background-color: #ffe5b4; /* สีเหลืองพีช */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.new-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ff7f50; /* สีส้ม */
+}
+
+.new-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Content Section */
+.content {
+    background-color: #fff0f5; /* สีชมพูอ่อน เพื่อสร้างความรู้สึกที่สดใส */
+    padding: 60px 0;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    color: #ff7f50; /* สีส้ม */
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature {
+    background-color: #fffaf0; /* สีเหลืองอ่อน */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Footer */
+.footer {
+    background-color: #ff7f50; /* สีส้มสดใส */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 1em;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('burger-hero.jpg'); /* ใช้ภาพพื้นหลังเบอร์เกอร์ */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.hero h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px; /* เพิ่มระยะห่างจากข้อความก่อนหน้า */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px; /* เพิ่มระยะห่างให้กับย่อหน้าหลังข้อความ */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* รูปภาพของเบอร์เกอร์ */
+.hero .hero-image {
+    width: 300px; /* ขนาดรูปภาพ */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px; /* เพิ่มระยะห่างระหว่างรูปภาพและปุ่ม */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ปุ่ม CTA */
+.hero .cta-button {
+    background-color: #ff7f50; /* สีส้ม */
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #ff4500; /* สีแดง */
+}
+
+
+
+/*หน้าเมนู*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ff9800;
+    padding: 10px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* เมนู 3x3 */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* กรอบสินค้า */
+.menu-item {
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ปุ่มสั่งซื้อ */
+.menu-item button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.menu-item button:hover {
+    background-color: #e68900;
+}
+/*เกี่ยวกับเรา*/
+/* Hero Section */
+.about-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ff7f50;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.5em;
+}
+
+/* Sections */
+.about-section, .features-section, .goal-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe5b4;
+}
+
+.about-section h2, .features-section h2, .goal-section h2 {
+    font-size: 2.5em;
+    color: #ff4500;
+    margin-bottom: 20px;
+}
+
+/* จุดเด่นของแอป */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    color: #ff7f50;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/*หน้าบริการ*/
+/* Hero Section */
+.services-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ff7f50;
+    color: white;
+}
+
+.services-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.services-hero p {
+    font-size: 1.5em;
+}
+
+/* Order Tracking */
+.order-tracking {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffe5b4;
+}
+
+.order-tracking h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+/* ตารางรายการสั่งซื้อ */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff4500;
+    color: white;
+}
+
+.status {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* สีสถานะ */
+.status.pending {
+    color: #ff9800; /* สีส้ม */
+}
+
+.status.delivering {
+    color: #28a745; /* สีน้ำเงิน */
+}
+
+.status.completed {
+    color: #28a745; /* สีเขียว */
+}
+
+/* Footer */
+.footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+/*ติดต่อเรา*/
+/* Hero Section */
+.contact-hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ff7f50;
+    color: white;
+}
+
+.contact-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.contact-hero p {
+    font-size: 1.5em;
+}
+
+/* ข้อมูลติดต่อ */
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe5b4;
+}
+
+.contact-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* ฟอร์มติดต่อ */
+.contact-form {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fffaf0;
+}
+
+.contact-form h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #ff4500;
+}
+
+/* โซเชียลมีเดีย */
+.social-media {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffe5b4;
+}
+
+.social-media h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.5em;
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icon:hover {
+    color: #ff4500;
+}
+
+/* Footer */
+.footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
